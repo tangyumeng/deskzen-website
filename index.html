@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DeskZen - The Minimalist macOS Desktop Cleaner</title>
+    <meta name="description" content="One click to cure your desktop clutter. DeskZen automatically archives screenshots, downloads, and files into neat folders.">
+    
+    <!-- Tailwind CSS (via CDN for simplicity) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #F9FAFB;
+            color: #111827;
+        }
+        .gradient-text {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to right, #4F46E5, #EC4899);
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+
+    <!-- Header -->
+    <header class="w-full max-w-5xl mx-auto px-6 py-8 flex justify-between items-center">
+        <div class="flex items-center gap-3">
+            <img src="assets/logo.png" alt="DeskZen Logo" class="h-12 object-contain">
+        </div>
+        <nav>
+            <a href="#features" class="text-gray-500 hover:text-gray-900 font-medium text-sm transition-colors">Features</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow flex flex-col items-center justify-center text-center px-6 py-20">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-600 text-sm font-medium mb-8 border border-indigo-100">
+            <span class="flex h-2 w-2 relative">
+                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+                <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-500"></span>
+            </span>
+            Now available for macOS
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 max-w-4xl">
+            Cure your desktop clutter in <span class="gradient-text">one click.</span>
+        </h1>
+        
+        <p class="text-xl text-gray-500 mb-10 max-w-2xl leading-relaxed">
+            DeskZen is a lightweight, menu-bar utility that instantly sweeps your messy screenshots and downloads into smartly organized archive folders.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row gap-4">
+            <!-- Download Button (Will link to GitHub Release later) -->
+            <a href="#" class="px-8 py-4 bg-gray-900 hover:bg-gray-800 text-white rounded-xl font-semibold text-lg shadow-lg shadow-gray-900/20 transition-all transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                Download for Mac
+            </a>
+            
+            <!-- Buy Pro Button (Will link to Lemon Squeezy later) -->
+            <a href="#" class="px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 border border-gray-200 rounded-xl font-semibold text-lg shadow-sm transition-all flex items-center justify-center gap-2">
+                Get Pro for $9.99
+            </a>
+        </div>
+        <p class="mt-4 text-sm text-gray-400">Requires macOS 13.0 or later. Universal for Apple Silicon & Intel.</p>
+        
+        <!-- App Mockup Image Placeholder -->
+        <div class="mt-20 w-full max-w-4xl rounded-2xl border border-gray-200 bg-white shadow-2xl overflow-hidden">
+            <div class="bg-gray-100 border-b border-gray-200 px-4 py-3 flex items-center gap-2">
+                <div class="w-3 h-3 rounded-full bg-red-400"></div>
+                <div class="w-3 h-3 rounded-full bg-yellow-400"></div>
+                <div class="w-3 h-3 rounded-full bg-green-400"></div>
+            </div>
+            <div class="p-10 text-center text-gray-400 bg-gray-50 h-64 flex flex-col items-center justify-center">
+                <svg class="w-12 h-12 mb-4 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                <p>App Screenshot goes here</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Features Section -->
+    <section id="features" class="w-full max-w-5xl mx-auto px-6 py-24 border-t border-gray-200">
+        <div class="grid md:grid-cols-3 gap-12">
+            <div>
+                <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">One-Click Sweep</h3>
+                <p class="text-gray-500 leading-relaxed">No complex rules. Just click the menu bar icon and watch your messy desktop become instantly clean.</p>
+            </div>
+            <div>
+                <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 002-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Smart Categorization</h3>
+                <p class="text-gray-500 leading-relaxed">Images, documents, and installers are automatically sorted into their own subfolders within the daily archive.</p>
+            </div>
+            <div>
+                <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center mb-6">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                </div>
+                <h3 class="text-xl font-bold mb-3">100% Local & Private</h3>
+                <p class="text-gray-500 leading-relaxed">DeskZen runs entirely on your Mac. No telemetry, no cloud uploads, and absolutely no data collection.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="w-full bg-white border-t border-gray-200 py-10 mt-auto">
+        <div class="max-w-5xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-gray-400 text-sm">© 2026 DeskZen. Built by an indie developer.</p>
+            <div class="flex gap-6 text-sm text-gray-500">
+                <a href="#" class="hover:text-gray-900">Twitter</a>
+                <a href="#" class="hover:text-gray-900">Support</a>
+                <a href="#" class="hover:text-gray-900">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
