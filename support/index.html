@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — DeskZen</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #F9FAFB; color: #111827; }
+    </style>
+</head>
+<body class="antialiased min-h-screen">
+    <header class="w-full max-w-3xl mx-auto px-6 py-8">
+        <a href="/" class="font-bold text-xl tracking-tight text-gray-900 hover:text-indigo-600">DeskZen</a>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-6 pb-24">
+        <h1 class="text-3xl font-bold mb-2">Support</h1>
+        <p class="text-gray-500 mb-10">Quick help for DeskZen on macOS.</p>
+
+        <div class="space-y-8 text-gray-600 leading-relaxed">
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">Granting file access</h2>
+                <p>If Clean fails, open <strong>System Settings → Privacy &amp; Security → Files and Folders</strong> (or Full Disk Access) and enable DeskZen for Desktop and Documents.</p>
+            </section>
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">Where do my files go?</h2>
+                <p>Archived files are moved to <code class="text-sm bg-gray-100 px-1 rounded">~/Documents/DeskZen_Archive/YYYY-MM-DD/</code>, optionally sorted into Images, Documents, Screenshots, and more.</p>
+            </section>
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">Undo a clean</h2>
+                <p>Open the menu bar and choose <strong>Undo Last Clean</strong> (⌘⇧Z), or tap Undo on the completion alert. Files return to the Desktop.</p>
+            </section>
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">Ignore list</h2>
+                <p>In Settings → General, add patterns such as <code class="text-sm bg-gray-100 px-1 rounded">todo.txt</code>, <code class="text-sm bg-gray-100 px-1 rounded">*.dmg</code>, or <code class="text-sm bg-gray-100 px-1 rounded">Screenshot*</code> so those files stay on the Desktop.</p>
+            </section>
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">License &amp; trial</h2>
+                <p>New installs include a 7-day free trial. After that, activate a Pro license key from Settings → License. Keys are emailed after purchase via Lemon Squeezy.</p>
+            </section>
+            <section>
+                <h2 class="text-xl font-semibold text-gray-900 mb-2">Contact</h2>
+                <p>Email <a class="text-indigo-600 hover:underline" href="mailto:support@deskzen.cc">support@deskzen.cc</a> and include your macOS version plus a short description of the issue.</p>
+            </section>
+        </div>
+    </main>
+</body>
+</html>
